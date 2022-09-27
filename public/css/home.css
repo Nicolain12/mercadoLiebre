@@ -1,3 +1,83 @@
+header{
+    background-color: #EAC926;
+}
+#search{
+    background-color: aliceblue;
+    display: inline;
+    width: auto;
+}
+.top{
+    margin-left: 20px;
+}
+.top img{
+    width: 190px;
+}
+.titular{
+    font-size: 24px;
+}
+#headerp{
+    font-size: 12px;
+    font-weight: bold;
+    color: #03264C;
+}
+
+#search{
+    display: block;
+    color: #03264C;
+    padding: 5px;
+    border: black solid 1px;
+    width: 13px;
+}
+.buscador{
+    border-radius:7px;
+}
+#buscador{
+   display: block;
+   padding: 5px;
+   border: black solid 1px;
+}
+
+.enlaces li a{
+    text-decoration: none;
+    color: #03264C;
+}
+.enlaces li i{
+    margin-left: 5px;
+}
+.enlaces{
+    padding: 0%;
+}
+#headerp{
+    text-align: center;
+}
+.burger-menu{
+    text-align: center;
+
+}
+.burger-menu i{
+    background-color: #1259c3;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 18px;
+    color: aliceblue;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+}
+.decripcion{
+    font-size: 16px;
+}
+p{
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    
+}
 img{
     width: 300px;
 }
+
+
+/*font-family: 'Roboto', sans-serif; */
