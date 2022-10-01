@@ -1,55 +1,83 @@
-header{
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;;
+}
+/*header*/
+
+.main-header{
     background-color: #EAC926;
-}
-#search{
-    background-color: aliceblue;
-    display: inline;
-    width: auto;
-}
-.top{
-    margin-left: 20px;
-}
-.top img{
-    width: 190px;
-}
-.titular{
-    font-size: 24px;
-}
-#headerp{
-    font-size: 12px;
-    font-weight: bold;
-    color: #03264C;
+    width: 100vw;
 }
 
-#search{
-    display: block;
+.top{
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+}
+.top img{
+    width: 50%;
+}
+
+.header-h2{
+    font-size: 17px;
+    font-weight: bold;
+    color: #03264C;
+    text-align: center;
+}
+.search-div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.fill-gap{
+   padding: 5px;
+   border: black solid 1px;
+   border-radius:7px;
+   width: 80%;
+}
+
+.search-buttom{
+    background-color: aliceblue;
+    size: auto;
+
     color: #03264C;
     padding: 5px;
     border: black solid 1px;
-    width: 13px;
-}
-.buscador{
+    width: 25px;
     border-radius:7px;
 }
-#buscador{
-   display: block;
-   padding: 5px;
-   border: black solid 1px;
+
+.main-navbar ul{
+    display: none;
 }
 
-.enlaces li a{
+.main-navbar ul{
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
     text-decoration: none;
     color: #03264C;
+    display: inline-block;
+    padding: 5px 0px;
+    font-size: 17px;
+    font-weight: 600;
 }
-.enlaces li i{
+.main-navbar ul i{
     margin-left: 5px;
 }
-.enlaces{
-    padding: 0%;
-}
-#headerp{
-    text-align: center;
-}
+
 .burger-menu{
     text-align: center;
 
@@ -61,23 +89,143 @@ header{
     margin-bottom: 18px;
     color: aliceblue;
 }
+
+/* MAIN */
+
+main{
+    background-color: #ebebeb;
+}
+.imagen-home{
+    display: none;
+}
+section{
+   background-color: #ebebeb;
+ 
+}
+.titular{
+    font-size: 24px;
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-top: 0%;
+}
+article{
+    width: 290px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+}
+.articles-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section .articles-div article  img{
+    display: block;
+    margin: auto;
+    margin-bottom: 10%;
+    border-bottom: solid #ebebeb 1px;
+    width: 290px;
+}
+
+.i-article{
+    display: flex;
+    justify-content: flex-end;
+}
+
+section article i{
+    display: block;
+    color: green;
+    margin-right: 30px;
+    box-sizing: border-box;
+}
+.precio-descuento{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.precio, .descuento, .descripcion{
+    padding-left: 5%;
+    box-sizing: border-box;
+}
 .precio{
     font-size: 18px;
+    font-weight: 800;
 }
 .descuento{
     font-size: 16px;
+    color: green;
+    font-weight: 800;
 }
-.decripcion{
+.descripcion{
     font-size: 16px;
+    padding-bottom: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media(min-width:400px){
+    .top img{
+        width: 200px;
+    }
+     
+}
+@media (min-width: 768px){
+     .main-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .header-h2{
+        text-align: right;
+        padding-right: 10px;
+    } 
+    .main-navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .left-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+    }
+    .right-links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .imagen-home{
+        display: flex;
+        width: 100%;
+    }
 }
 p{
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
     
 }
-img{
-    width: 300px;
-}
-
-
-/*font-family: 'Roboto', sans-serif; */
