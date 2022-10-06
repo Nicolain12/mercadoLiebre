@@ -88,7 +88,9 @@ body{
     margin-bottom: 18px;
     color: aliceblue;
 }
-
+    .imagen-home{
+        width: 100%;
+    }
 /* MAIN */
 
 main{
@@ -110,11 +112,24 @@ section{
 article{
     width: 290px;
     background-color: white;
-    margin: auto;
     margin-bottom: 5vh;
-    box-sizing: border-box;
     box-shadow: 0px 0px 10px rgb(100,100,100);
+    align-content: flex-start;
 }
+.descripcion{
+    display: none;
+}
+
+article:hover .descripcion{
+    display: block;
+}
+
+.descripcion{
+    font-size: 16px;
+    padding-bottom: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+
 .articles-div{
     display: flex;
     flex-wrap: wrap;
@@ -138,8 +153,14 @@ section article i{
     display: block;
     color: green;
     margin-right: 30px;
-    box-sizing: border-box;
+    rotate: 0deg;
+    transition: rotate 0.5s;
 }
+
+section article i:hover{
+    rotate: -90deg;
+}
+
 .precio-descuento{
     display: flex;
     justify-content: flex-start;
@@ -158,11 +179,7 @@ section article i{
     color: green;
     font-weight: 800;
 }
-.descripcion{
-    font-size: 16px;
-    padding-bottom: 5%;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 @media(min-width:360px){
     .top img{
@@ -220,11 +237,9 @@ section article i{
     .burger-menu{
         display: none;
     }
-    .imagen-home{
-        display: flex;
-        width: 100%;
-    }
+
 }
+
 p{
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
