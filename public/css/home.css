@@ -1,10 +1,12 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     font-family: 'Roboto', sans-serif;;
 }
-/*header*/
+
+/*HEADER*/
 
 .main-header{
     background-color: #EAC926;
@@ -88,10 +90,10 @@ body{
     margin-bottom: 18px;
     color: aliceblue;
 }
-    .imagen-home{
-        width: 100%;
-    }
-/* MAIN */
+
+
+
+/*MAIN*/
 
 main{
     background-color: #ebebeb;
@@ -112,24 +114,11 @@ section{
 article{
     width: 290px;
     background-color: white;
-    margin-bottom: 5vh;
+     margin: auto; 
+     margin-bottom: 5vh; 
+     box-sizing: border-box; 
     box-shadow: 0px 0px 10px rgb(100,100,100);
-    align-content: flex-start;
 }
-.descripcion{
-    display: none;
-}
-
-article:hover .descripcion{
-    display: block;
-}
-
-.descripcion{
-    font-size: 16px;
-    padding-bottom: 5%;
-    font-family: 'Roboto', sans-serif;
-}
-
 .articles-div{
     display: flex;
     flex-wrap: wrap;
@@ -138,10 +127,9 @@ article:hover .descripcion{
 
 section .articles-div article  img{
     display: block;
-    margin: auto;
-    margin-bottom: 10%;
+     margin: auto; 
     border-bottom: solid #ebebeb 1px;
-    width: 290px;
+    width: 100%;
 }
 
 .i-article{
@@ -153,14 +141,17 @@ section article i{
     display: block;
     color: green;
     margin-right: 30px;
+    border: green 1px solid;
+    padding: 5px;
+    position: relative;
+    bottom: 13px;
+    border-radius: 50%;
     rotate: 0deg;
     transition: rotate 0.5s;
 }
-
 section article i:hover{
     rotate: -90deg;
 }
-
 .precio-descuento{
     display: flex;
     justify-content: flex-start;
@@ -168,7 +159,7 @@ section article i:hover{
 }
 .precio, .descuento, .descripcion{
     padding-left: 5%;
-    box-sizing: border-box;
+     box-sizing: border-box; 
 }
 .precio{
     font-size: 18px;
@@ -179,7 +170,21 @@ section article i:hover{
     color: green;
     font-weight: 800;
 }
+.descripcion{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.descripcion{
+    visibility: hidden;
+}
+
+article:hover .descripcion{
+    visibility: visible;
+}
+article:hover{
+    box-shadow: 0px 0px 50px rgb(100,100,100);
+}
 
 @media(min-width:360px){
     .top img{
@@ -237,8 +242,18 @@ section article i:hover{
     .burger-menu{
         display: none;
     }
-
+    .imagen-home{
+        display: flex;
+        width: 100%;
+    }
 }
+
+@media(min-width: 870px ) and (max-width:1279) {
+    .articles-div article{
+        width: 20vw;
+    }
+}
+
 
 p{
     font-size: 12px;
