@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Roboto:ital,wght@0,100;1,400&display=swap" rel="stylesheet">
+    <title>Mercado Libre Registro</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="top">
+            <img src="/images/logo-mercado-liebre.svg" class="logo" alt="Imagen Mercado Liebre">
+            <div class="search-div">
+                <form action="https://www.mercadolibre.com.ar/jm/search" method="GET" role="search" class="input">
+                    <input class="fill-gap" name="as_word" placeholder="Buscar productos, marcas" type="text">
+                    <button type="submit" class="search-buttom"><i id="lupa" class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        
+       
+            <h2 class="header-h2">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Compra en cuotas y sin tarjeta de credito
+            </h2>
+        </div>
+        <nav class="main-navbar">
+            <ul class="left-links" type="none">
+                <li><a href="">Tiendas Oficiales</a></li>
+                <li><a href="">Vender</a></li>
+                <li><a href="">Ayuda</a></li>
+                <li><a href="">Ofertas</a></li>
+            </ul>
+            <ul class="right-links" type="none">
+                <li><a href="/register">crea tu cuenta</a><i class="fa-solid fa-address-card"></i></li>
+                <li><a href="/login">ingresa</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                <li><a href="">mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <a href=""><i class="fas fa-bars"></i></a>
+            </div>
+        
+    </header>
+    <main>
+        <form action="/" method="GET">
+            <section>
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" name="name" id="name">
+            </section>
+            <section>
+                <label for="user">Nombre de usuario:</label>
+                <input type="text" name="user" id="user">
+            </section>
+            <section>
+                <label for="bd-date">Fecha de nacimiento:</label>
+                <input type="date" id="bd-date" name="bd-date">
+            </section>
+            <section>
+                <label for="recidense">Domicilio</label>
+                <input type="text" name="recidense" id="recidense">
+            </section>
+            <section>
+                <label>Perfil de usuario:</label>
+                <div>
+                    <input type="radio" id="buy" name="perfil-de-usuario" value="buy">
+                    <label for="buy">Comprar</label>
+                    <input type="radio" id="sell" name="perfil-de-usuario" value="sell">
+                    <label for="sell">Vender</label>
+                </div>
+            </section>
+            <section>
+                <select name="interest-class" id="interest-class">
+                    <option value="electro">Electro</option>
+                    <option value="moda">Moda</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="jugueteria">Jugueteria</option>
+                    <option value="vida-sana">Vida sana</option>
+                </select>
+            </section>
+            <section>
+                <label for="user-picture">Ingresa tu foto de usuario:</label>
+                <input type="file" name="user-picture" accept=".jpg .png">
+            </section>
+            <section>
+                <label for="password">Ingresa tu contraseña:</label>                
+                <input type="password" name="password" id="password">
+            </section>
+            <section>
+                <label for="confirm-password">Ingresa tu contraseña:</label>            
+                <input type="password" name="confirm-password" id="confirm-password">
+            </section>
+            <section>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

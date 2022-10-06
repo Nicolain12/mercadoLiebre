@@ -1,11 +1,6 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Roboto', sans-serif;;
-}
-/*header*/
 
+
+/*header*/
 .main-header{
     background-color: #EAC926;
     width: 100vw;
@@ -89,88 +84,15 @@ body{
     color: aliceblue;
 }
 
-/* MAIN */
 
-main{
-    background-color: #ebebeb;
-}
-.imagen-home{
-    display: none;
-}
-section{
-   background-color: #ebebeb;
- 
-}
-.titular{
-    font-size: 24px;
-    padding-left: 5%;
-    padding-top: 5%;
-    margin-top: 0%;
-}
-article{
-    width: 290px;
-    background-color: white;
-    margin: auto;
-    margin-bottom: 5vh;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 10px rgb(100,100,100);
-}
-.articles-div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
-section .articles-div article  img{
-    display: block;
-    margin: auto;
-    margin-bottom: 10%;
-    border-bottom: solid #ebebeb 1px;
-    width: 290px;
-}
-
-.i-article{
-    display: flex;
-    justify-content: flex-end;
-}
-
-section article i{
-    display: block;
-    color: green;
-    margin-right: 30px;
-    box-sizing: border-box;
-}
-.precio-descuento{
-    display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
-}
-.precio, .descuento, .descripcion{
-    padding-left: 5%;
-    box-sizing: border-box;
-}
-.precio{
-    font-size: 18px;
-    font-weight: 800;
-}
-.descuento{
-    font-size: 16px;
-    color: green;
-    font-weight: 800;
-}
-.descripcion{
-    font-size: 16px;
-    padding-bottom: 5%;
-    font-family: 'Roboto', sans-serif;
-}
-
-@media(min-width:360px){
+@media(min-width:400px){
     .top img{
-        width: 170px;
+        width: 200px;
     }
      
 }
-@media screen and (min-width: 768px){
+@media (min-width: 768px){
      .main-header{
         display: flex;
         flex-direction: column;
@@ -199,7 +121,6 @@ section article i{
     .main-navbar{
         display: flex;
         flex-direction: row;
-        margin-top: 20px;
         
     }
     .left-links{
@@ -224,9 +145,4 @@ section article i{
         display: flex;
         width: 100%;
     }
-}
-p{
-    font-size: 12px;
-    font-family: 'Roboto', sans-serif;
-    
 }
