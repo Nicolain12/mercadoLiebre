@@ -248,12 +248,11 @@ article:hover{
     }
 }
 
-@media(min-width: 870px ) and (max-width:1279) {
-    .articles-div article{
+@media(min-width: 870px ){
+    article{
         width: 20vw;
     }
 }
-
 
 p{
     font-size: 12px;
