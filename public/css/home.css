@@ -2,9 +2,10 @@
     box-sizing: border-box;
 }
 
-body{
+body, footer{
     font-family: 'Roboto', sans-serif;;
 }
+
 
 /*HEADER*/
 
@@ -185,6 +186,67 @@ article:hover .descripcion{
 article:hover{
     box-shadow: 0px 0px 50px rgb(100,100,100);
 }
+
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-main{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-div{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    box-shadow: 0px 0px 5px rgb(100,100,100);
+    border-radius: 5%;
+}
+.footer-div:hover{
+    box-shadow: 0px 0px 15px rgb(100,100,100);
+}
+.footer-div:hover i{
+    font-size: 35px;
+}
+.footer-div i{
+    color: #1259c3;
+    margin: 5% 5% 10% 5%;
+    font-size: 30px;
+}
+.footer-div h3{
+    text-align: center;
+    margin: 0% 5% 2% 5%;
+}
+.footer-div p{
+    text-align: center;
+    margin: 0% 5% 0% 5%;
+    font-weight: 400;
+}
+.footer-footer{
+    margin-top: 3%;
+}
+.ff-content{
+    font-size: 14px;
+}
+
+
+@media (min-width: 720px){
+    .footer-div{
+        width: 25%;
+    }
+}
+
+
 
 @media(min-width:360px){
     .top img{
