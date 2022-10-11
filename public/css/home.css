@@ -220,8 +220,8 @@ footer{
 }
 .footer-div i{
     color: #1259c3;
-    margin: 5% 5% 10% 5%;
-    font-size: 30px;
+    margin: 5px 5px 10px 5px;
+    font-size: 2em;
 }
 .footer-div h3{
     text-align: center;
